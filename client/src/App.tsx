@@ -90,6 +90,9 @@ function App() {
         <p className="text-center text-muted-foreground">
           Transform your basic prompts into professional-grade AI prompts
         </p>
+        <p className="text-center text-red-500">
+          DEBUG Backend URL: {import.meta.env.VITE_BACKEND_URL || 'Not Set'}
+        </p>
 
         <div className="grid gap-6">
           <Card>
