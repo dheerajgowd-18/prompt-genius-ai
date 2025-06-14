@@ -50,7 +50,7 @@ function App() {
 
     setIsLoading(true)
     try {
-      const response = await fetch('http://localhost:3000/generate-prompt', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/generate-prompt`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
